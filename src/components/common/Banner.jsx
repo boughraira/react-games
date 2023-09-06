@@ -40,6 +40,7 @@ const BannerWrapper = styled.div`
   min-height: 768px;
   .radius {
     border-radius: 10rem;
+    text-align: center;
   }
 
   .banner-badge {
