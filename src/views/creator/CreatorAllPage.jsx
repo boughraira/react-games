@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import Tetris from "../games/tetris/Tetris";
 
 const CreatorAllPage = () => {
   return (
     <CreatorAllPageWrapper>
       <div className="sc-creators section">
         <div className="container">
-          <h1>...</h1>
+          <Tetris />
         </div>
       </div>
     </CreatorAllPageWrapper>

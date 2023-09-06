@@ -51,7 +51,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link to="/creators" className="nav-link">
-                  creators
+                  populated games
                 </Link>
               </li>
               <li className="nav-item">
