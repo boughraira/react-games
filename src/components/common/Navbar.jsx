@@ -99,8 +99,12 @@ export default Navbar;
 
 const NavbarWrapper = styled.div`
   min-height: 78px;
-  background: #090624;
-
+  background: rgb(9, 6, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 6, 36, 1) 7%,
+    rgba(26, 115, 106, 1) 28%
+  );
   .navbar-brand {
     font-weight: 700;
     font-size: 32px;

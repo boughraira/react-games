@@ -11,7 +11,7 @@ const Banner = () => {
       }}
     >
       <div className="banner-content w-100 container text-white ">
-        <div className="banner-badge text-uppercase">
+        <div className="banner-badge text-uppercase radius">
           Dive into Endless Gaming Adventures
         </div>
         <h1 className="banner-title text-uppercase">
@@ -38,6 +38,9 @@ export default Banner;
 
 const BannerWrapper = styled.div`
   min-height: 768px;
+  .radius {
+    border-radius: 10rem;
+  }
 
   .banner-badge {
     background: linear-gradient(
