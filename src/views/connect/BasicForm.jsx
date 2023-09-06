@@ -95,7 +95,7 @@ const BasicForm = () => {
         )}
 
         <button type="submit" className="submit">
-          Submit
+          SIGN UP
         </button>
       </form>
     </BasicFormWrapper>
@@ -107,7 +107,7 @@ export default BasicForm;
 const BasicFormWrapper = styled.div`
   .error {
     color: #fc8181;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     text-align: left;
     margin-top: 0.25rem;
   }
@@ -122,7 +122,7 @@ const BasicFormWrapper = styled.div`
   form {
     z-index: 99;
     width: 50rem;
-    height: 40rem;
+    height: 43.5rem;
     margin: -17rem 0 0 25rem;
     padding: 2rem;
     display: flex;
@@ -195,6 +195,9 @@ const BasicFormWrapper = styled.div`
     -o-border-radius: 2rem;
     margin: 0 auto;
     color: aliceblue;
+    &:hover {
+      background-color: #e91e63;
+    }
   }
 
   .react-icon {
@@ -207,7 +210,7 @@ const BasicFormWrapper = styled.div`
   @media (max-width: 768px) {
     form {
       width: 40rem;
-      height: 35rem;
+      height: 41rem;
       margin: -3rem 0 0 10rem;
       padding: 2rem;
     }
@@ -245,7 +248,7 @@ const BasicFormWrapper = styled.div`
   @media (max-width: 480px) {
     form {
       width: 32rem;
-      height: 35rem;
+      height: 40rem;
       margin: -3rem 0 0 2rem;
       padding: 2rem;
     }
