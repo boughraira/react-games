@@ -88,6 +88,7 @@ const GameItemWrapper = styled.div`
     background-color: var(--clr-violet-light);
     padding: 20px 18px;
 
+
     .card-title {
       font-size: 18px;
       font-weight: 800px;
@@ -107,7 +108,9 @@ const GameItemWrapper = styled.div`
       letter-spacing: 0.03em;
       display: flex;
       align-items: center;
+      justify-content: center;
       transition: var(--transition-default);
+       
 
       &:hover {
         background-color: var(--clr-green-normal);
