@@ -31,7 +31,7 @@ const GameItem = ({ gameItem }) => {
             <h1 className="details-item-value">Author: {gameItem?.author} </h1>
           </div>
           <Link to={gameItem?.link} className="card-button text-uppercase">
-            Play now
+            Play
           </Link>
         </div>
       </div>
