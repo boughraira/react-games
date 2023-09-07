@@ -1,7 +1,5 @@
 import styled from "styled-components";
-// const GAME_URL = "/src/StandloneGames/Tetris/index.html"; //mode dev
-const GAME_URL =
-  "https://gaming-eihb.onrender.com/src/StandloneGames/Tetris/index.html"; //mode prod
+const GAME_URL = "/src/StandloneGames/Tetris/index.html"; 
 
 const Tetris = () => {
   return (
