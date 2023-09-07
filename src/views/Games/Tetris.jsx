@@ -6,12 +6,12 @@ const GAME_URL = "/StandloneGames/Tetris/index.html";
 const Tetris = () => {
   return (
     <TetrisWrapper>
-      <div>
-        <iframe src={GAME_URL} className="iframe"></iframe>
-      </div>
+      <div dangerouslySetInnerHTML={{ __html: GAME_URL }} />
     </TetrisWrapper>
   );
 };
+
+export default Tetris;
 
 export default Tetris;
 
