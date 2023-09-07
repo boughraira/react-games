@@ -13,7 +13,7 @@ const Tetris = () => {
 
 export default Tetris;
 
-export default Tetris;
+
 
 const TetrisWrapper = styled.div`
   background-color: var(--clr-violet-dark-active);
