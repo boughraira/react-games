@@ -1,5 +1,4 @@
 import styled from "styled-components";
-/opt/build/repo
 // const GAME_URL = "/StandloneGames/Tetris/index.html";
 const GAME_URL = "/opt/build/repo/StandloneGames/Tetris/index.html";
 
