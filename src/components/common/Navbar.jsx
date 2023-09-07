@@ -23,7 +23,7 @@ const Navbar = () => {
               to="/"
               className="navbar-brand text-white text-uppercase no-wrap"
             >
-              <span>srayen</span> cool <span>games</span>
+              <span></span> cool <span>games</span>
             </Link>
             <button
               type="button"
@@ -49,16 +49,16 @@ const Navbar = () => {
                   home
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link to="/games/tetris" className="nav-link">
                   games
                 </Link>
-              </li>
-              <li className="nav-item">
+              </li> */}
+              {/* <li className="nav-item">
                 <Link to="/stores" className="nav-link">
                   stores
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link to="/populated-games" className="nav-link">
                   populated games
@@ -68,7 +68,7 @@ const Navbar = () => {
 
             <ul className="connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap">
               <li className="text-uppercase fw-7 w-100 connect-text mb-2">
-                <Link to="/connect" className="connect-link">
+                <Link to="/connect/signin" className="connect-link">
                   connect
                 </Link>
               </li>

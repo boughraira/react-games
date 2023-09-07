@@ -8,8 +8,9 @@ import {
   ViewStoreDetails,
 } from "../views/index";
 import BaseLayout from "../layouts/BaseLayout";
-import Connect from "../views/connect/Connect";
+import SignUpComponent from "../views/connect/signup/SignUpComponent";
 import Tetris from "../views/Games/Tetris";
+import SignInComponent from "../views/connect/signin/SignInComponent";
 
 const AppRouter = () => {
   return (
@@ -23,7 +24,8 @@ const AppRouter = () => {
           <Route path="/stores" element={<ViewStoreAll />} />
           <Route path="/stores/:storeId" element={<ViewStoreDetails />} />
           <Route path="/games/tetris" element={<Tetris />} />
-          <Route path="/connect" element={<Connect />} />
+          <Route path="/connect/signup" element={<SignUpComponent />} />
+          <Route path="/connect/signin" element={<SignInComponent />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

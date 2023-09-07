@@ -76,7 +76,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container d-flex flex-column text-center">
           <p className="footer-bottom-text text-green">
-            Copyright &copy; 2023 SRayen - All rights reserved.
+            Copyright &copy; 2023 - All rights reserved.
           </p>
           <ul className="footer-bottom-links d-flex justif-content-center">
             <li>

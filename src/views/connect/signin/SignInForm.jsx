@@ -1,9 +1,9 @@
 import { useFormik } from "formik";
-import { FaUserAlt } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { basicSchema } from "./schemas";
+import { basicSchema } from "../schemas";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const onSubmit = async (values, actions) => {
   console.log("submitted");
@@ -11,21 +11,19 @@ const onSubmit = async (values, actions) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm();
 };
-const BasicForm = () => {
+const SignInForm = () => {
   const { values, errors, touched, handleChange, handleBlur, handleSubmit } =
     useFormik({
       initialValues: {
         email: "",
-        age: "",
         password: "",
-        confirmPassword: "",
       },
       validationSchema: basicSchema,
       onSubmit,
     });
 
   return (
-    <BasicFormWrapper>
+    <SignInFormWrapper>
       <form onSubmit={handleSubmit} autoComplete="off">
         <div className="line-input">
           <GrMail className="react-icon" />
@@ -45,20 +43,6 @@ const BasicForm = () => {
         )}
 
         <div className="line-input">
-          <FaUserAlt className="react-icon" />
-          <input
-            type="number"
-            value={values.age}
-            id="age"
-            onChange={handleChange}
-            placeholder="Enter your Age"
-            onBlur={handleBlur}
-            className={errors.age && touched.age ? "input-error" : ""}
-          />
-        </div>
-        {errors.age && touched.age && <p className="error">{errors.age}</p>}
-
-        <div className="line-input">
           <RiLockPasswordFill className="react-icon" />
           <input
             type="password"
@@ -74,37 +58,37 @@ const BasicForm = () => {
           <p className="error">{errors.password}</p>
         )}
 
-        <div className="line-input">
-          <RiLockPasswordFill className="react-icon" />
-          <input
-            type="password"
-            value={values.confirmPassword}
-            id="confirmPassword"
-            onChange={handleChange}
-            placeholder="Confirm Password"
-            onBlur={handleBlur}
-            className={
-              errors.confirmPassword && touched.confirmPassword
-                ? "input-error"
-                : ""
-            }
-          />
-        </div>
-        {errors.confirmPassword && touched.confirmPassword && (
-          <p className="error">{errors.confirmPassword}</p>
-        )}
-
         <button type="submit" className="submit">
-          SIGN UP
+          SIGN In
         </button>
+        <p className="info">
+        Don't have an account?<span> </span>
+          <Link to="/connect/signup" className="info-plus">
+          Sign Up
+                </Link>
+        </p>
       </form>
-    </BasicFormWrapper>
+    </SignInFormWrapper>
   );
 };
 
-export default BasicForm;
+export default SignInForm;
 
-const BasicFormWrapper = styled.div`
+const SignInFormWrapper = styled.div`
+  .info {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .info-plus {
+    color: white;
+    font-size: 2.3rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    &:hover {
+      color: #4caf50;
+    }
+  }
   .error {
     color: #fc8181;
     font-size: 1.5rem;
@@ -122,12 +106,12 @@ const BasicFormWrapper = styled.div`
   form {
     z-index: 99;
     width: 50rem;
-    height: 43.5rem;
+    height: 37rem;
     margin: -17rem 0 0 25rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   input,
@@ -170,7 +154,7 @@ const BasicFormWrapper = styled.div`
 
   .line-input {
     border-radius: 2rem;
-    background-color: #009f9dff;
+    background-color: #009f9d;
     width: 45rem;
     display: flex;
     align-items: center;
@@ -182,7 +166,7 @@ const BasicFormWrapper = styled.div`
   }
 
   .submit {
-    background-color: #009f9dff;
+    background-color: #009f9d;
     height: 5.5rem;
     width: 19rem;
     font-size: 3.5rem;
@@ -246,6 +230,13 @@ const BasicFormWrapper = styled.div`
   }
 
   @media (max-width: 480px) {
+    .info {
+      font-size: 1.8rem;
+      font-weight: 400;
+    }
+    .info-plus {
+      font-size: 2rem;
+    }
     form {
       width: 32rem;
       height: 40rem;

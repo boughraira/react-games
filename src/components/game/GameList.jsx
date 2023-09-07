@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GameItem from "./GameItem";
 import PropTypes from "prop-types";
 
-const GameList = ({ games, sliceValue = games.length }) => {
+const GameList = () => {
   // by default we are going to display all the games fetched from api if not any slicevalue is mentioned
   const custom_games = [
     {
@@ -14,7 +14,7 @@ const GameList = ({ games, sliceValue = games.length }) => {
       background_image:
         "https://res.cloudinary.com/ray-cloud/image/upload/v1693491856/rally_racing_rsf87q.jpg",
       link: "https://cdn-factory.marketjs.com/en/rally-racing/index.html",
-      author: "SRayen",
+      author: "",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const GameList = ({ games, sliceValue = games.length }) => {
       background_image:
         "https://res.cloudinary.com/ray-cloud/image/upload/v1693491878/pinball_basketball_srqato.jpg",
       link: "https://cdn-factory.marketjs.com/en/pinball-basketball/index.html",
-      author: "SRayen",
+      author: "",
     },
     {
       id: 3,
@@ -35,8 +35,8 @@ const GameList = ({ games, sliceValue = games.length }) => {
       updated: "2023-08-30T16:12:38",
       background_image:
         "https://res.cloudinary.com/ray-cloud/image/upload/v1694063871/tetris_iepaqg.png",
-      link: "./games/tetris",
-      author: "SRayen",
+      link: "/games/tetris",
+      author: "",
     },
   ];
   return (
