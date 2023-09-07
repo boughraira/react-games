@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-// const GAME_URL = "/StandloneGames/Tetris/index.html";
-const GAME_URL = "https://react-gaming-sigma.vercel.app/StandloneGames/Tetris/index.html";
+const GAME_URL = "/StandloneGames/Tetris/index.html";
 
 
 const Tetris = () => {

@@ -34,7 +34,7 @@ const GameList = ({ games, sliceValue = games.length }) => {
       released: "2023-06-13",
       updated: "2023-08-30T16:12:38",
       background_image:
-        "https://res.cloudinary.com/ray-cloud/image/upload/v1693491868/surfing_hero_pikjqt.jpg",
+        "https://res.cloudinary.com/ray-cloud/image/upload/v1694063871/tetris_iepaqg.png",
       link: "./games/tetris",
       author: "SRayen",
     },
