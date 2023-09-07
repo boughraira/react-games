@@ -112,3 +112,13 @@ h3 {
   font-size: 1.5rem;
   width: 100%;
 }
+
+@media (max-width: 480px) {
+  #win {
+    font-size: 3rem;
+  }
+  #result {
+    width: 18rem;
+    height: 10rem;
+  }
+}

@@ -50,8 +50,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/creators" className="nav-link">
-                  populated games
+                <Link to="/games/tetris" className="nav-link">
+                  games
                 </Link>
               </li>
               <li className="nav-item">
@@ -60,8 +60,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/games" className="nav-link">
-                  games
+                <Link to="/populated-games" className="nav-link">
+                  populated games
                 </Link>
               </li>
             </ul>

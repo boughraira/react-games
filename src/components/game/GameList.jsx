@@ -2,7 +2,6 @@ import styled from "styled-components";
 import GameItem from "./GameItem";
 import PropTypes from "prop-types";
 
-
 const GameList = ({ games, sliceValue = games.length }) => {
   // by default we are going to display all the games fetched from api if not any slicevalue is mentioned
   const custom_games = [
@@ -30,13 +29,13 @@ const GameList = ({ games, sliceValue = games.length }) => {
     },
     {
       id: 3,
-      name: "Surfing Hero",
+      name: "Tetris",
       rating: 5,
       released: "2023-06-13",
       updated: "2023-08-30T16:12:38",
       background_image:
         "https://res.cloudinary.com/ray-cloud/image/upload/v1693491868/surfing_hero_pikjqt.jpg",
-      link: "https://cdn-factory.marketjs.com/en/surfing-hero/index.html",
+      link: "./games/tetris",
       author: "SRayen",
     },
   ];
