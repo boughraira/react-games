@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const GAME_URL = "/public/StandloneGames/Tetris/index.html";
+// const GAME_URL = "/public/StandloneGames/Tetris/index.html";
+const GAME_URL = "/MainTetris.html";
 
 const Tetris = () => {
   return (
