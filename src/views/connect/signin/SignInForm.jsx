@@ -62,10 +62,10 @@ const SignInForm = () => {
           SIGN In
         </button>
         <p className="info">
-        Don't have an account?<span> </span>
+          Don't have an account?<span> </span>
           <Link to="/connect/signup" className="info-plus">
-          Sign Up
-                </Link>
+            Sign Up
+          </Link>
         </p>
       </form>
     </SignInFormWrapper>
@@ -76,7 +76,7 @@ export default SignInForm;
 
 const SignInFormWrapper = styled.div`
   .info {
-    color: white;
+    color: #e91e63;
     font-size: 2rem;
     text-align: center;
     font-weight: 500;

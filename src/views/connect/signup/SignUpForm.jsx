@@ -101,8 +101,8 @@ const SignUpForm = () => {
         <p className="info">
           Already have an account?<span> </span>
           <Link to="/connect/signin" className="info-plus">
-          Sign In
-                </Link>
+            Sign In
+          </Link>
         </p>
       </form>
     </SignUpFormWrapper>
@@ -113,10 +113,10 @@ export default SignUpForm;
 
 const SignUpFormWrapper = styled.div`
   .info {
-    color: white;
+    color: #e91e63;
     font-size: 2rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
   }
   .info-plus {
     color: white;
@@ -269,7 +269,7 @@ const SignUpFormWrapper = styled.div`
   @media (max-width: 480px) {
     .info {
       font-size: 1.8rem;
-      font-weight: 400;
+      font-weight: 500;
     }
     .info-plus {
       font-size: 2rem;
