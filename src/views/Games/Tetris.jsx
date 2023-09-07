@@ -1,5 +1,7 @@
 import styled from "styled-components";
-const GAME_URL = "/src/StandloneGames/Tetris/index.html";
+// const GAME_URL = "/src/StandloneGames/Tetris/index.html"; //mode dev
+const GAME_URL =
+  "https://gaming-eihb.onrender.com/src/StandloneGames/Tetris/index.html"; //mode prod
 
 const Tetris = () => {
   return (
@@ -28,17 +30,17 @@ const TetrisWrapper = styled.div`
 
   @media (max-width: 768px) {
     .iframe {
-    margin: 2rem 0;
-    width: 60rem;
-    height: 60rem;
-  }
+      margin: 2rem 0;
+      width: 60rem;
+      height: 60rem;
+    }
   }
 
   @media (max-width: 480px) {
     .iframe {
-    margin: 2rem 0;
-    width: 33rem;
-    height: 60rem;
-  }
+      margin: 2rem 0;
+      width: 33rem;
+      height: 60rem;
+    }
   }
 `;
