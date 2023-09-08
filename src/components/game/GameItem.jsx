@@ -28,7 +28,7 @@ const GameItem = ({ gameItem }) => {
               <p className="details-item-name fw-6">Updated: &nbsp;</p>
               <p className="details-item-value">{gameItem?.updated} </p>
             </div>
-            {/* <h1 className="details-item-value">Author: {gameItem?.author} </h1> */}
+            <div className="details-item-value"></div>
           </div>
           <Link to={gameItem?.link} className="card-button text-uppercase">
             Play
